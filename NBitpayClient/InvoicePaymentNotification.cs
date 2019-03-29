@@ -47,6 +47,24 @@ namespace NBitpayClient
 			get; set;
 		}
 
+        [JsonProperty(PropertyName = "bitcoinAddress")]
+        public string BitcoinAddress
+        {
+            get; set;
+        }
+
+        [JsonProperty("transactionIds")]
+        public List<string> TransactionIds
+        {
+            get; set;
+        }
+
+        [JsonProperty("depositAddresses")]
+        public List<string> DepositAddresses
+        {
+            get; set;
+        }
+
 		[JsonProperty(PropertyName = "price")]
 		public decimal Price
 		{
